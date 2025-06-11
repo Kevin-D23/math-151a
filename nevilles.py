@@ -37,7 +37,6 @@ def inverse_nevilles_method(x_points, y_points, y_target=0):
 
 
 if __name__ == "__main__":
-    # Example from part (d) in the image
     x_points = [0.25, 0.5, 1, 1.25]
     y_points = [25.2, 49.2, 96.4, 119.4]
     x = 0.75
@@ -45,10 +44,3 @@ if __name__ == "__main__":
     result = nevilles_method(x_points, y_points, x)
     print(f"Interpolated value at x = {x}: {result}")
 
-    # Example from question 12 (inverse interpolation)
-    # x_points = [0.3, 0.4, 0.5, 0.6]
-    # y_points = [0.740818, 0.670320, 0.606531, 0.548812]
-    # y_target = 0
-    # print("\nIterated inverse interpolation to solve x - e^{-x} = 0:")
-    # result = inverse_nevilles_method(x_points, y_points, y_target)
-    # print(f"Approximate solution x ≈ {result}")
